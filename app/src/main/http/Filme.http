@@ -1,7 +1,7 @@
 
 @baseUrl = https://8080-lucastamaga-atividadesp-bht0calsqgc.ws-us116.gitpod.io
 
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgSm9nb3MiLCJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI1NDA5NTc5fQ.hp8ewJUMaJugjDVfc6FgPPz8fAvWC_ly_5K-smyeCwA
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgSm9nb3MiLCJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI2MDA1MDI5fQ.lPJasbcXb88b1lr3BVZ_Rx5ms_s_iF1oFGF7rwRIjL8
 ###
 
 
@@ -22,20 +22,22 @@ Authorization: Bearer {{token}}
 
 ###
 
-GET {{baseUrl}}/filmes/3
+GET {{baseUrl}}/filmes/1
+Authorization: Bearer {{token}}
 
 
 ###
 
-PUT {{baseUrl}}/filmes/2
+PUT {{baseUrl}}/filmes/1
 Content-Type: application/json
-Authorization: Bearer ACCESS-TOKEN
+Authorization: Bearer {{token}}
 
 {
-    "nomeFilme": "Clube da Luta",
-    "genero": "Ação"
+    "nomeFilme": "Avatar",
+    "genero": "Aventura"
 }
 
 
 ###
-DELETE {{baseUrl}}/filmes/1
+DELETE {{baseUrl}}/filmes/2
+Authorization: Bearer {{token}}
