@@ -1,0 +1,41 @@
+
+@baseUrl = https://8080-lucastamaga-atividadesp-bht0calsqgc.ws-us116.gitpod.io
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgSm9nb3MiLCJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI1NDA5NTc5fQ.hp8ewJUMaJugjDVfc6FgPPz8fAvWC_ly_5K-smyeCwA
+###
+
+
+GET {{baseUrl}}/filmes
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+POST {{baseUrl}}/filmes
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "nomeFilme": "Titanic",
+    "genero": "Drama"
+}
+
+###
+
+GET {{baseUrl}}/filmes/3
+
+
+###
+
+PUT {{baseUrl}}/filmes/2
+Content-Type: application/json
+Authorization: Bearer ACCESS-TOKEN
+
+{
+    "nomeFilme": "Clube da Luta",
+    "genero": "Ação"
+}
+
+
+###
+DELETE {{baseUrl}}/filmes/1
